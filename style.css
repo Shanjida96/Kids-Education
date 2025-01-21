@@ -28,14 +28,17 @@ color: #FEA301;
 margin:0;
 padding: 0;
 }
+.body{
+    padding: 20px 100px;
+}
 main{
     max-width: 1440px;
     margin: 0 auto;
 }
+/* header */
 /* nav bar related style starts */
 .nav-container{
     justify-content: space-around;
-    padding: 20px 100px;
     align-items: center;
 }
 .logo {
@@ -65,8 +68,33 @@ main{
 /* nav bar related style ends */
 
 /* banner related style starts*/
-
-
+.banner{
+    display: flex;
+}
+.banner-container{
+    width: 640px;
+    padding: 120px 50px 120px 0px;
+    margin:100px 140px 0px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.banner-desc{
+    margin: 24px 0;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.Enroll{
+      background-color: black;
+      color: #FFFFFF;
+      width: 200px;
+      height: 50px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      /* 20px */
+}
 /* responsive */
 @media screen and (max-width:576px){
     .nav-container h3, .nav-items,.Contact-btn{
@@ -77,8 +105,32 @@ main{
     }
     .nav-container{
         justify-content: space-between;
-        max-width: 380px;
         height: 50px;
-        padding: 10px
+        margin: 12px 16px; 
+        width: 100%;
+    }
+    /* fix */
+    .banner{
+        flex-direction: column-reverse;
+        margin: 8px 16px 0px;
+        max-width: 350px;
+    }
+    .banner-container{
+        margin: 0px ;
+        padding: 0 16px;
+        max-width: 350px;
+    }
+    .banner img
+    {
+     margin:20px 10px;
+    } 
+    .banner-desc{
+        margin: 18px auto;
+        font-size: 0.88rem;
+        text-align: center;
+    }
+    .Enroll{
+        display: block;
+        margin: 18px auto 0;
     }
 }
