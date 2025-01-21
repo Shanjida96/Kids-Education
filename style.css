@@ -28,9 +28,6 @@ color: #FEA301;
 margin:0;
 padding: 0;
 }
-.body{
-    padding: 20px 100px;
-}
 main{
     max-width: 1440px;
     margin: 0 auto;
@@ -94,6 +91,27 @@ main{
       font-weight: 700;
       font-size: 1.25rem;
       /* 20px */
+}
+.Curriculum{
+    /* background-color: #FFF4DC; */
+    background-color: rgba(255, 244, 220, 1);
+}
+.Curriculum h1{
+    display: flex;
+    justify-self: center;
+    padding-top: 60px;
+}
+.Curriculum-container{
+    display: flex;
+    margin:80px 140px;
+    justify-content: space-between;
+}
+.Card{
+    max-width: 370px;
+    height: 470px;
+}
+.Card-1:hover{
+    background-color: #DEF5FF;
 }
 /* responsive */
 @media screen and (max-width:576px){
