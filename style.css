@@ -24,13 +24,16 @@ color: #FEA301;
     background-color: #FEA301;
 }
 /* Shared class */
+:root{
+    --primary-color: #01ACFD;
+    --button-color:#95B226;
+}
 *{
 margin:0;
 padding: 0;
 }
 main{
-    max-width: 1440px;
-    margin: 0 auto;
+ /* max-width: 1440px; */
 }
 /* header */
 /* nav bar related style starts */
@@ -82,7 +85,7 @@ main{
     font-weight: 400;
     font-size: 1.25rem;
 }
-.Enroll{
+.Enroll,.View{
       background-color: black;
       color: #FFFFFF;
       width: 200px;
@@ -92,22 +95,21 @@ main{
       font-size: 1.25rem;
       /* 20px */
 }
+/* Curriculum related styles */
 .Curriculum{
     /* background-color: #FFF4DC; */
     background-image: url(assets/bg.png);
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
-.Curriculum h1{
-    display: flex;
+.Curriculum h1,.Stories h1{
     justify-self: center;
     padding-top: 60px;
 }
 .Curriculum-container{
-    display: flex;
     margin:80px 140px;
     justify-content: space-between;
 }
-.Curriculum-description{
+.Curriculum-description, .Card-desc{
     color: #808080;
     font-size: 0.94rem;
     margin-top: 34px;
@@ -139,6 +141,98 @@ main{
     gap: 20px;
     margin: 80px auto;
 }
+/* Curriculum related style ends (includes mixed styles) */
+
+/* Stories related style */
+.Stories{
+    background: linear-gradient(to bottom ,rgba(255, 255, 255, 1),rgba(254, 163, 1, 0.3));
+    margin: 0px;
+}
+.Stories-Container{
+    
+    background-image: url(assets/bg.png);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* margin: 80px 140px; */
+    gap: 20px;
+    margin: 0px;
+    padding: 100px 140px;
+   
+}
+.Stories-Card1{
+    max-width: 50vw;
+    border: none;
+    background-color: #FFFFFF;
+    height: 500px;
+}
+.Stories-Card1 .title {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight:600;
+    margin-left: 30px;
+}
+.Card-desc{
+    margin-left: 38px;
+}
+.Stories button{
+    /* color: #FFFFFF; */
+    border-radius: 50px;
+    width: 170px;
+    height: 45px;
+    border: none;
+}
+.Stories-Container button{
+    margin-top: -120px;
+    margin-left: 30px;
+    font-size: 0.94rem;
+    font-weight:500;
+}
+.Stories-Card1
+{
+    height: 630px;
+    border-radius: 12px;
+}
+.Stories-Card1 img{
+    /* height: 30vh; */
+    height: 300px;
+    max-width: 540px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.Stories-btn1{
+    background-color: #3CD8E8;
+
+}
+.Stories-btn1,.Stories-btn2,.Stories-btn3,.Stories-btn4,.Stories-btn5{
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.Stories-Card2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.Stories-btn2, .Stories-btn4,.Stories-btn5{
+    background-color: var(--button-color);
+}
+.Stories-btn3{
+    background-color: #5D58F0;
+}
+.Sub-Card{
+    max-width: 300px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+.Sub-Card img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.View{
+   display: block;  
+   margin: auto;
+}
 /* responsive */
 @media screen and (max-width:576px){
     .nav-container h3, .nav-items,.Contact-btn{
@@ -152,8 +246,9 @@ main{
         height: 50px;
         margin: 12px 16px; 
         width: 100%;
+        border-bottom: 2px solid #FEA301;
     }
-    /* fix */
+    
     .banner{
         flex-direction: column-reverse;
         margin: 8px 16px 0px;
@@ -184,5 +279,36 @@ main{
     }
     .button{
         display: none;
+    }
+    .Stories{
+        width: 430px;
+        margin: 0;
+        padding:5px;
+    }
+    .Stories h1{
+        margin-bottom: 10px;
+    }
+    .Stories-Container{
+        padding:0;
+    }
+    .Stories-Card1
+    {
+        display: none;
+    }
+
+    .Sub-Card{
+
+        max-width:200px;
+    }
+    .Sub-Card img{
+        width: 100%;
+    }
+    .Sub-Card button
+    {
+        margin-left: 2px;
+    }
+    .View-button{
+        width: 100%;
+        margin-top: 10px;
     }
 }
