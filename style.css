@@ -288,6 +288,10 @@ main{
     .menu-icon{
         display: block;
     }
+    .logo{
+        height: 20px;
+        margin-bottom: 7px;
+    }
     .nav-container{
         justify-content: space-between;
         height: 50px;
