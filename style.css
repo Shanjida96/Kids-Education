@@ -359,9 +359,9 @@ main{
         margin-top: 10px;
     }
     .footer{
-        width: 450px;
+        width: 470px;
         margin: 0px;
-        height: 750px;
+        height: 800px;
     }
     .footer-container{
         flex-direction: column;
