@@ -125,6 +125,9 @@ main{
 .Card h3, .Card p{
     text-align: center;
 }
+.Card p{
+   line-height: 1.75rem;
+}
 .Card button{
     border: none;
     font-size: 0.94rem;
