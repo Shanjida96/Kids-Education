@@ -121,6 +121,9 @@ main{
     height: 370px;
     justify-items: center;
 }
+.Card h3, .Card p{
+    text-align: center;
+}
 .Card button{
     border: none;
     font-size: 0.94rem;
@@ -173,7 +176,8 @@ main{
     margin-left: 30px;
 }
 .Card-desc{
-    margin-left: 38px;
+    margin-left: 30px;
+    text-align: left;
 }
 .Stories button{
     /* color: #FFFFFF; */
@@ -226,9 +230,13 @@ main{
     background-color: #FFFFFF;
     border-radius: 12px;
 }
+
 .Sub-Card img{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+}
+.Sub-Card h3{
+    text-align: center;
 }
 .View{
    display: block;  
@@ -332,7 +340,7 @@ main{
         display: none;
     }
     .Stories{
-        width: 470px;
+        width: 450px;
         margin: 0;
         padding:5px;
     }
